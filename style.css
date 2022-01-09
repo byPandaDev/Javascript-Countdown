@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat bottom/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    color: #fff;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.heading h1 {
+    font-size: 6em;
+}
+
+.heading h2 {
+    font-size: 3em;
+}
+
+.counters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 32px;
+}
+
+.counter {
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.counter h3 {
+    font-size: 3em;
+}
+
+.counter p {
+    font-size: 1em;
+}
+
+.select-date {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.select-date h2 {
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.all-settings {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    display: flex;
+    align-items: flex-start;
+    transition: all 300ms ease-in-out;
+}
+.all-settings.active {
+    right: 0;
+}
+
+.settings-button {
+    cursor: pointer;
+    background-color: #505050;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.settings-overview {
+    background-color: #505050;
+    width: 200px;
+    height: calc(100vh - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.settings-overview h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.setting {
+    border-bottom: 1px solid #3d3d3d;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.setting h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
