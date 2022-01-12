@@ -7,12 +7,13 @@
 body {
     height: 100vh;
     width: 100%;
-    background: url('https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat bottom/cover;
+    background-color: #fff;
+    background: url('') no-repeat bottom/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins';
-    color: #fff;
+    color: #000;
     overflow: hidden;
 }
 
@@ -72,13 +73,14 @@ body {
 .all-settings {
     position: absolute;
     top: 0;
-    right: -220px;
+    right: 0;
     display: flex;
     align-items: flex-start;
     transition: all 300ms ease-in-out;
+    color: #fff;
 }
-.all-settings.active {
-    right: 0;
+.all-settings.active .settings-overview {
+    display: block;
 }
 
 .settings-button {
@@ -86,22 +88,22 @@ body {
     background-color: #505050;
     width: 35px;
     height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-size: 30px;
     border-radius: 5px 0 0 5px;
+    opacity: 1;
 }
 
 .settings-overview {
     background-color: #505050;
     width: 200px;
     height: calc(100vh - 20px);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    text-align: center;
     padding: 10px;
+    display: none;
+    transition: all 300ms ease-in-out;
+    
 }
 
 .settings-overview h2 {
@@ -131,4 +133,22 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 input[type="color"]::-webkit-color-swatch {
 	border: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    font-weight: 800;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
 }

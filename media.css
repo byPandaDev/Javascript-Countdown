@@ -1,0 +1,43 @@
+@media screen and (max-width: 1300px){}
+
+@media screen and (max-width: 992px) {
+    .heading h1 {
+        font-size: 80px;
+    }
+    .heading h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading h1 {
+        font-size: 60px;
+    }
+    .heading h2 {
+        font-size: 40px;
+    }
+
+    .counter h3 {
+        font-size: 40px;
+    }
+
+    .counters {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .heading h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 420px) {
+    
+}
+@media screen and (max-width: 320px) {}
+
